@@ -24,18 +24,19 @@
   <!-- End of Parallax Pixel Background Animation -->
 
   <a id="profilePicture" href="#popup">
-    <img src="https://0.gravatar.com/avatar/3bc3b8bbdace1637947a22a7244ad223" alt="Profile Picture">
+    <img src="/E2ngG9kb_2x.jpg" alt="Profile Picture">
   </a>
 
   <div class="overlay" id="popup">
     <div class="popup">
       <div class="popup-photo">
-        <a href="https://0.gravatar.com/avatar/3bc3b8bbdace1637947a22a7244ad223" target="_blank">
-          <img src="https://0.gravatar.com/avatar/3bc3b8bbdace1637947a22a7244ad223" alt="Profile Picture">
+        <a href="/E2ngG9kb_2x.jpg" target="_blank">
+          <img src="/E2ngG9kb_2x.jpg" alt="Profile Picture">
         </a>
       </div>
-      <div class="popup-quote">
-        🤠
+     <div class="popup-quote">
+        AI upscaled gravatar avatar
+        
       </div>
       <a class="popup-close" onclick="history.back()">&times;</a>
     </div>
@@ -46,12 +47,15 @@
   </div>
 
   <div id="links">
+    
     <a id="github" class="link" href="https://github.com/pkrakmo" target="_blank">
       <i class="fab fa-github">&nbsp;</i>Github
     </a>
+
     <a id="anilist" class="link" href="https://anilist.co/user/Mimung" target="_blank">
       <i class="fa fa-play-circle">&nbsp;</i>AniList
     </a>
+
   </div>
 
   <script>
@@ -60,26 +64,27 @@
     const stars2 = []
     const stars3 = []
 
-    const numberOfStars1 = '1000'
-    const numberOfStars2 = '600'
-    const numberOfStars3 = '100'
+    const numberOfStars1 = 1000
+    const numberOfStars2 = 600
+    const numberOfStars3 = 100
+    const size = 8000
 
 
     for (let i = 0; i < numberOfStars1; i++) {
-      const pos1 = (Math.floor(Math.random() * 5200))
-      const pos2 = (Math.floor(Math.random() * 5200))
+      const pos1 = (Math.floor(Math.random() * size))
+      const pos2 = (Math.floor(Math.random() * size))
       stars1.push(`${pos1}px ${pos2}px #fff`)
     }
 
     for (let i = 0; i < numberOfStars2; i++) {
-      const pos1 = (Math.floor(Math.random() * 5200))
-      const pos2 = (Math.floor(Math.random() * 5200))
+      const pos1 = (Math.floor(Math.random() * size))
+      const pos2 = (Math.floor(Math.random() * size))
       stars2.push(`${pos1}px ${pos2}px #fff`)
     }
 
     for (let i = 0; i < numberOfStars3; i++) {
-      const pos1 = (Math.floor(Math.random() * 5200))
-      const pos2 = (Math.floor(Math.random() * 5200))
+      const pos1 = (Math.floor(Math.random() * size))
+      const pos2 = (Math.floor(Math.random() * size))
       stars3.push(`${pos1}px ${pos2}px #fff`)
     }
 
